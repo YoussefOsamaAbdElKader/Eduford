@@ -1,0 +1,443 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: "Open Sans";
+
+}
+ul li {
+    list-style-type: none;
+}
+.fa-bars{
+    color: white;
+    font-size: 1.8rem;
+    display: none;
+}
+.fa-xmark{
+    display: none;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+}
+.sectionSpecifity{
+    padding: 5em 2em;
+    text-align: center;
+    gap: 4em;
+
+}
+.header{
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    background: #0e0536;  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(16, 53, 129, 0.8)), url("eduford_img/banner.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(7, 28, 70, 0.8)), url("eduford_img/banner.png"); /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 2em;
+    align-items: center;
+    height: 10vh;
+}
+.nav__links{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav__links ul{
+    display: flex;
+}
+li + li{
+    margin-left: 2em;
+}
+nav a img{
+    width: 50%;
+}
+.nav__link{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: .9rem;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+    transition:all .4s ease;
+}
+
+.nav__link:hover{
+    color: #FF0000;
+    transform: color;
+}
+
+
+.nav__link + .nav__link{
+    margin-left: 2em;
+}
+
+.intro__content{
+    height: 90vh;
+    color: white;
+    text-align: center;
+    gap: 2em;
+}
+
+.intro__content h1{
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .15px;
+    margin-top: 0;
+    text-shadow: 2px -2px 6px rgba(10,2,42,0);
+}
+
+.intro__content p{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 0;
+    width: 70%;
+    text-shadow: 2px -2px 6px #0A022A;
+}
+
+.intro__btn{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: .8em 2em;
+    font-size: 1rem;
+    letter-spacing: .15px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.intro__btn:hover{
+    background-color: #951a1a;
+    border: 1px solid #951a1a;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    backface-visibility: hidden;
+}
+
+/* COURSES WE OFFER SECTION */
+
+.section__heading{
+    font-size: 2.4rem;
+    letter-spacing: .15px;
+}
+
+.section__paragraph{
+    margin-top: 1em;
+    color: #787676;
+}
+
+.coursesWeOffer__card + .coursesWeOffer__card{
+    margin-left: 1em;
+}
+
+.coursesWeOffer__card{
+    background-color: rgb(252, 237, 237);
+    padding: 3em 1em;
+}
+
+.card__paragraph{
+    margin-top: 1em;
+}
+
+.coursesWeOffer__card:nth-child(2){
+    -webkit-box-shadow: 1px 5px 13px 2px rgb(0 0 0 / 23%);
+    box-shadow: 1px 5px 13px 2px rgb(0 0 0 / 23%);
+    margin-top: -10px;
+}
+
+/* OUR GLOBAL CAMPUS */
+
+
+.img__card img{
+    border-radius: .7em;
+    cursor: pointer;
+}
+.img__card{
+    position: relative;
+}
+.layer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 1.5rem;
+    letter-spacing: .15px;
+    display: none;
+    cursor: pointer;
+    border-radius: .7em;
+    display: flex;
+    transition:  .5s ease;
+    }
+.layer h3{
+    position: absolute;
+    bottom: 0;
+    transition: .5s ease;
+    display: none;
+}
+    .layer:hover{
+        background-color: rgba(255, 0, 0, 0.4);        
+    }
+    .layer:hover h3{
+display: block;
+bottom: 50%;
+    }
+.img__card + .img__card{
+    margin-left: 1em;
+}
+/* OUR FACILITIES */
+
+
+.card__container{
+    align-items: flex-start;
+    text-align: left;
+    gap: 1em;
+}
+.card__container img{
+    border-radius: 1rem;
+}
+.card__container h3{
+    font-weight: 900;
+    letter-spacing: .15px;
+}
+.card__container p{
+    font-size: .9rem;
+    color: #787676;
+    margin-top: 5px;
+}
+.card__container + .card__container{
+    margin-left: 2em;
+}
+
+/* TESTMONIALS */
+
+.testmonial__card{
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(252, 237, 237);
+    padding: 2em;
+    width: 100%;
+
+}
+.testmonial__card p{
+    font-size: .875rem;
+    line-height: 1.7;
+    color: #787676;
+}
+.testmonial__card span{
+    align-items: flex-start;
+    gap: .5em;
+}
+
+.users{
+    width: 10%;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+.testmonial__card h3{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.testmonial__card + .testmonial__card{
+    margin-left: 1em;
+}
+.fa-star{
+    color: #FF0000;
+}
+.fa-star-half-stroke{
+    color: #FF0000;
+}
+
+/* CTA SECTION */
+.cta__section{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(16, 53, 129, 0.8)), url("eduford_img/banner2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(7, 28, 70, 0.8)), url("eduford_img/banner2.jpg"); /* The least supported option. */
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    gap: 2em;
+    width: 100%;
+    padding: 7em 0;
+}
+.cta__section h2{
+    width: 70%;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    letter-spacing: .15px;
+}
+
+.cta__section .intro__btn{
+    padding: .5em 2em;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    text-align: center;
+    padding-bottom: 5em;
+}
+footer p{
+    width:70% ;
+}
+.fa-brands{
+    color: #951a1a;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.fa-brands:hover{
+    color: #FF0000;
+}
+.social__links + .social__links{
+    margin-left: 2em;
+}
+.copyright{
+    text-decoration: none;
+    color: #787676;
+    transition: all .2s ease;
+}
+.copyright:hover{
+    color: #951a1a;
+}
+
+@media (max-width:768px) {
+    .fa-bars{
+        display: block;
+    }
+    .fa-xmark{
+        color: white;
+        align-self: flex-start;
+        display: block;
+        margin-top: 2em;
+        font-size: 1.4rem;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+    .nav__links ul li{
+        display: block;
+    }
+    .nav__links ul{
+        display: block;
+    }
+    li +li{
+        margin-left: 0;
+    }
+    .nav__links{
+        position: absolute;
+        background-color: #951a1a;
+        height: 100vh;
+        width: 300px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 100;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 1s ease;
+    }
+    .nav__links ul li a{
+        font-size: 1rem;
+    }
+
+    li +li{
+        margin-top: 5em;
+    }
+    .sectionSpecifity{
+        padding: 3rem;
+    }
+    .header{
+        height: 90vh;
+    }
+
+    .intro__content{
+        gap: 1em;
+        height: 70vh;
+    }
+    .intro__content h1{
+       font-size: 2.4rem;
+    }
+    .intro__content p{
+        width: 90%;
+    }
+    .section__heading{
+        font-size: 1.8rem;
+    }
+    .section__paragraph{
+        margin-top: 5px;
+    }
+    .cards__container{
+        flex-direction: column;
+        width: 80%;
+    }
+    .coursesWeOffer__card  + .coursesWeOffer__card {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+    .images__container{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .img__card + .img__card {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+    .ourFacilities__card__container{
+        flex-direction: column;
+        width: 80%;
+    }
+    .card__container + .card__container{
+        margin-left: 0;
+        margin-top:2em;
+    }
+
+    .testmonials__container{
+        flex-direction: column;
+        width: 80%;
+    }
+    .testmonial__card + .testmonial__card{
+        margin-left: 0;
+        margin-top: 2em;
+    }
+    .cta__section{
+        padding: 3em 0 ;
+    }
+    .cta__section h2{
+        font-size: 1.5rem;
+    }
+    
+}
+
+

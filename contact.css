@@ -1,0 +1,48 @@
+.header{
+    height: 60vh;
+}
+.intro__content{
+    height: 40vh;
+}
+.aboutUs .col:nth-child(2){
+    background-color: aliceblue;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1em;    
+}
+
+.input__container{
+    margin-top: 2em;
+    width: 100%;
+}
+.input__container input{
+    background-color: transparent;
+    padding: 1em 2em;
+    width: 100%;
+    border: 2px solid #c3860c;
+    border-radius: 10px;
+}
+
+.input__container input:focus{
+    border: saddlebrown;
+}
+
+input::placeholder{
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+input::placeholder:focus{
+    color: red;
+}
+
+input[type = 'submit']{
+    background-color: #c3860c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+input[type ='submit']:hover{
+    background-color: #ab7813;
+}

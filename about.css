@@ -1,0 +1,52 @@
+.header{
+    height: 60vh;
+    background: #0e0536;  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(16, 53, 129, 0.8)), url("eduford_img/background.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(7, 28, 70, 0.8)), url("eduford_img/background.jpg"); /* The least supported option. */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.intro__content{
+    height: 50vh;
+}
+
+.aboutUs .col:nth-child(1){
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    width: 100%;
+}
+.aboutUs .col:nth-child(1) .intro__btn{
+    background-color: #e39b0b;
+    border: none;
+}
+.aboutUs .col:nth-child(1) .intro__btn:hover{
+    background-color: #c3860c;
+    border: none;
+}
+.aboutUs .col:nth-child(1) p{
+    margin: 1em 0 ;
+    line-height: 1.7;
+}
+.aboutUs .col:nth-child(2){
+    width: 100%;
+}
+.aboutUs .col:nth-child(1) h3{
+    font-size: 2.4rem;
+}
+
+@media (max-width:768px) {
+    .header{
+        height: 40vh;
+    }
+    .intro__content{
+        height: 20vh;
+    }
+    .aboutUs{
+        flex-direction: column-reverse;
+    }
+    .aboutUs .col:nth-child(1) h3{
+        font-size: 1.8rem;
+    }
+}
